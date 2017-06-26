@@ -4,12 +4,17 @@
         <meta charset="UTF-8" />
         <title>{% block title %}Bitcoin!{% endblock %}</title>
         {% block stylesheets %}
-            <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" />
-            <link href=" https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet" />
-            <link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.0/css/jquery.dataTables.css">
-            <link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.0/css/jquery.dataTables_themeroller.css">
+       <!--      <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" /> -->
+            <link rel="stylesheet" type="text/css" href="{{ asset ('bootstrap.css') }}">
+             <link rel="stylesheet" type="text/css" href="{{ asset ('bootswatch.min.css') }}">
+              <link rel="stylesheet" type="text/css" href="{{ asset ('jquery-ui.css') }}">
+
+            <link href=" https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet" />            <!--  <link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.0/css/jquery.dataTables.css">
+            <link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.0/css/jquery.dataTables_themeroller.css"> -->
             <link rel="stylesheet" type="text/css" href="{{ asset ('canvas.css') }}">
             <link rel="stylesheet" type="text/css" href="{{ asset ('app.css') }}">
+            <link rel="stylesheet" type="text/css" href="{{ asset ('fonts/glyphicons-halflings-regular.woff2') }}">
+             
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
         {% endblock %}
     </head>
