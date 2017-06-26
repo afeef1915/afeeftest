@@ -13,4 +13,3 @@ acme_bitcoin_alert:
 acme_bitcoin_manage_alert:
     path:     /maange-alert
     defaults: { _controller: AcmeBitcoinBundle:Default:MangeAlert }
-    
